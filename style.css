@@ -1,1 +1,41 @@
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+background: #0f172a;
+color: #e2e8f0;
+}
+
+header {
+text-align: center;
+padding: 60px;
+background: linear-gradient(90deg, #1e293b, #0f172a);
+}
+
+h1 {
+margin: 0;
+font-size: 40px;
+}
+
+section {
+padding: 40px;
+max-width: 900px;
+margin: auto;
+}
+
+h2 {
+color: #38bdf8;
+}
+
+.project {
+background: #1e293b;
+padding: 20px;
+margin: 15px 0;
+border-radius: 12px;
+transition: 0.3s;
+}
+
+.project:hover {
+transform: scale(1.02);
+background: #334155;
+}
 
