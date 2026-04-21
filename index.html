@@ -2,68 +2,107 @@
 
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Nithish Kumar | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Nithish Kumar | Portfolio</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- HERO SECTION -->
+<!-- NAVBAR -->
+
+<nav>
+    <h2>Nithish</h2>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
 
 <section class="hero">
-    <div class="hero-text">
+    <div class="hero-left fade-in">
         <h1>Nithish Kumar</h1>
         <h2>Data Scientist</h2>
-        <p>I build machine learning models and data-driven applications.</p>
+        <p>I build machine learning models and real-world data solutions.</p>
 
 ```
     <div class="buttons">
         <a href="https://github.com/nithishflow" class="btn">GitHub</a>
-        <a href="https://www.linkedin.com/in/nithish-kumar-342842295/" class="btn">LinkedIn</a>
-        <a href="#" class="btn">Resume</a>
+        <a href="#" class="btn">LinkedIn</a>
     </div>
 </div>
 
-<div class="hero-img">
-    <img src="images/profile.jpg" alt="Nithish">
+<div class="hero-right slide-in">
+    <img src="images/profile.jpg">
 </div>
 ```
 
+</section>
+
+<!-- ABOUT -->
+
+<section id="about" class="fade-in">
+    <h2>About</h2>
+    <p>
+        Passionate Data Scientist with skills in ML, NLP, and data analysis.
+        I enjoy building models and deploying real-time applications.
+    </p>
 </section>
 
 <!-- SKILLS -->
 
-<section class="skills">
+<section id="skills">
     <h2>Skills</h2>
-    <div class="skill-box">
-        <span>Python</span>
-        <span>SQL</span>
-        <span>Machine Learning</span>
-        <span>TensorFlow</span>
-        <span>Streamlit</span>
-        <span>Power BI</span>
-    </div>
+
+```
+<div class="skill">
+    <p>Python</p>
+    <div class="bar"><div class="fill" style="width:90%"></div></div>
+</div>
+
+<div class="skill">
+    <p>Machine Learning</p>
+    <div class="bar"><div class="fill" style="width:85%"></div></div>
+</div>
+
+<div class="skill">
+    <p>TensorFlow</p>
+    <div class="bar"><div class="fill" style="width:80%"></div></div>
+</div>
+
+<div class="skill">
+    <p>SQL</p>
+    <div class="bar"><div class="fill" style="width:75%"></div></div>
+</div>
+```
+
 </section>
 
 <!-- PROJECTS -->
 
-<section class="projects">
+<section id="projects">
     <h2>Projects</h2>
 
 ```
-<div class="project-card">
+<div class="project-card fade-in">
     <h3>Content Monetization Modeler</h3>
-    <p>Predicts YouTube revenue using ML & Lasso Regression.</p>
+    <p>Predict YouTube revenue using ML.</p>
+    <a href="#" class="btn">GitHub</a>
 </div>
 
-<div class="project-card">
+<div class="project-card fade-in">
     <h3>PhonePe Data Analysis</h3>
-    <p>Analyzed digital payments and built dashboards.</p>
+    <p>Digital payment insights using dashboards.</p>
+    <a href="#" class="btn">GitHub</a>
 </div>
 
-<div class="project-card">
+<div class="project-card fade-in">
     <h3>Housing Sales Dashboard</h3>
-    <p>Power BI dashboard for real estate insights.</p>
+    <p>Power BI visualization project.</p>
+    <a href="#" class="btn">GitHub</a>
 </div>
 ```
 
@@ -71,12 +110,15 @@
 
 <!-- CONTACT -->
 
-<section class="contact">
+<section id="contact" class="fade-in">
     <h2>Contact</h2>
     <p>Email: nithiskumar0981@gmail.com</p>
 </section>
 
+<script src="script.js"></script>
+
 </body>
 </html>
+
 
 
