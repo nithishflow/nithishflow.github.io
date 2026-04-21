@@ -2,91 +2,110 @@ body {
 margin: 0;
 font-family: 'Segoe UI', sans-serif;
 background: #0f172a;
-color: #e2e8f0;
+color: white;
+}
+
+/* NAVBAR */
+nav {
+display: flex;
+justify-content: space-between;
+padding: 20px 50px;
+background: black;
+position: sticky;
+top: 0;
+}
+
+nav ul {
+display: flex;
+list-style: none;
+}
+
+nav li {
+margin-left: 20px;
+}
+
+nav a {
+text-decoration: none;
+color: white;
 }
 
 /* HERO */
 .hero {
 display: flex;
-justify-content: space-between;
 align-items: center;
+justify-content: space-between;
 padding: 80px;
 }
 
-.hero-text h1 {
-font-size: 48px;
-margin: 0;
+.hero-left {
+max-width: 500px;
 }
 
-.hero-text h2 {
-color: #38bdf8;
+.hero-right img {
+width: 300px;
+border-radius: 10px;
 }
 
-.hero-text p {
-max-width: 400px;
-}
-
-.hero-img img {
-width: 200px;
-border-radius: 50%;
-border: 3px solid #38bdf8;
-}
-
-/* BUTTONS */
-.buttons {
-margin-top: 20px;
-}
-
+/* BUTTON */
 .btn {
-text-decoration: none;
 padding: 10px 20px;
-margin-right: 10px;
 background: #38bdf8;
 color: black;
-border-radius: 8px;
-transition: 0.3s;
+border-radius: 6px;
+text-decoration: none;
 }
 
-.btn:hover {
-background: #0ea5e9;
+/* SECTIONS */
+section {
+padding: 60px;
 }
 
 /* SKILLS */
-.skills {
-padding: 50px;
-text-align: center;
+.skill {
+margin: 15px 0;
 }
 
-.skill-box span {
+.bar {
 background: #1e293b;
-padding: 10px 15px;
-margin: 5px;
-display: inline-block;
-border-radius: 8px;
+height: 10px;
+border-radius: 5px;
+}
+
+.fill {
+height: 10px;
+background: #38bdf8;
 }
 
 /* PROJECTS */
-.projects {
-padding: 50px;
-}
-
 .project-card {
 background: #1e293b;
 padding: 20px;
-margin: 15px 0;
+margin: 20px 0;
 border-radius: 10px;
-transition: 0.3s;
 }
 
-.project-card:hover {
-transform: translateY(-5px);
-background: #334155;
+/* ANIMATIONS */
+.fade-in {
+opacity: 0;
+transform: translateY(30px);
+transition: 1s;
 }
 
-/* CONTACT */
-.contact {
-padding: 50px;
-text-align: center;
+.fade-in.show {
+opacity: 1;
+transform: translateY(0);
 }
+
+.slide-in {
+opacity: 0;
+transform: translateX(50px);
+transition: 1s;
+}
+
+.slide-in.show {
+opacity: 1;
+transform: translateX(0);
+}
+
 
 
